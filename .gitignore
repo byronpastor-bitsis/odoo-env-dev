@@ -1,0 +1,29 @@
+# Ignorar archivos de configuración de Odoo
+*.log
+*.swp
+
+# Ignorar archivos de base de datos
+*.db
+*.sqlite3
+
+# Ignorar archivos de configuración del entorno
+.env
+*.conf
+
+# Ignorar directorios de Odoo en el entorno local
+odoo2dev-16.0/conf
+odoo2dev-16.0/odoo/addons
+odoo2dev-16.0/odoo/custom_addons
+
+# Ignorar carpetas de desarrollo
+__pycache__/
+*.py[cod]
+
+# Ignorar otros archivos innecesarios
+*.bak
+*.old
+*.backup
+
+# Ignorar cualquier otro repositorio que esté siendo almacenado temporalmente
+odooenvdev/
+odooenvdev/*
