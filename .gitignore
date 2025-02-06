@@ -11,9 +11,8 @@
 *.conf
 
 # Ignorar directorios de Odoo en el entorno local
-odoo2dev-16.0/conf
-odoo2dev-16.0/odoo/addons
-odoo2dev-16.0/odoo/custom_addons
+odoo_content/conf
+odoo_content/*
 
 # Ignorar carpetas de desarrollo
 __pycache__/
