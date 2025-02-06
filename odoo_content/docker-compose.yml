@@ -1,9 +1,8 @@
-version: "3.7"
 services:
     odoo16:
         image: odoo:16.0
         platform: linux/amd64
-        container_name: odoo16
+        container_name: odoo
         depends_on:
             - postgresql
         tty: true
@@ -14,7 +13,7 @@ services:
             - ./addons:/mnt/extra-addons
             - ./conf:/etc/odoo
         environment:
-            - HOST=postgres
+            - HOST=postgresql
         restart: always
     postgresql:
         image: postgres:13.0
